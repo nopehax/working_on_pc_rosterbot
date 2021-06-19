@@ -19,7 +19,7 @@ got_it = False
 
 option = webdriver.ChromeOptions()
 option.binary_location = brave_path
-option.add_argument("--headless")
+#option.add_argument("--headless")
 option.add_argument('--log-level=3')
 option.add_argument('--incognito')
 
@@ -94,6 +94,7 @@ def chope():
                 print(obj.text)
                 obj.accept
                 got_it = True
+                print("6 slots has already been booked for the week")
                 return
             except TimeoutException:
                 pass
