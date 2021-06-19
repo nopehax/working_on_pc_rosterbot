@@ -94,7 +94,6 @@ def chope():
                 print(obj.text)
                 obj.accept
                 got_it = True
-                print("6 slots has already been booked for the week")
                 return
             except TimeoutException:
                 pass
