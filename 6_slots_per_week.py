@@ -21,7 +21,7 @@ got_it = False
 
 option = webdriver.ChromeOptions()
 option.binary_location = brave_path
-option.add_argument("--headless")
+#option.add_argument("--headless")
 option.add_argument('--log-level=3')
 option.add_argument('--incognito')
 
@@ -93,11 +93,12 @@ def chope():
         date = wanted_row[0].text
         day = date[date.find("(")+1:date.find(")")]
         if day in DAYS:
-            checkbox = wanted_row[1].find_elements_by_xpath(".//*")[0]
-            if not checkbox.is_selected() and checkbox.is_enabled():
-                checkbox.click()                
-                choped += 1
-                print('Open slot selected')
+            checkbox_list = wanted_row[1].find_elements_by_xpath(".//input[@type='checkbox']")
+            for checkbox in checkbox_list:
+                if not checkbox.is_selected() and checkbox.is_enabled():
+                    checkbox.click()                
+                    choped += 1
+                    print('Open slot selected')
 
     if choped != 0:
         submit = browser.find_element_by_id('btnSubmit')
