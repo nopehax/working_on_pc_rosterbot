@@ -94,7 +94,7 @@ def chope():
         day = date[date.find("(")+1:date.find(")")]
         if day in DAYS:
             checkbox = wanted_row[1].find_elements_by_xpath(".//*")[0]
-            if not checkbox.is_selected and checkbox.is_enabled:
+            if not checkbox.is_selected() and checkbox.is_enabled():
                 checkbox.click()                
                 choped += 1
                 print('Open slot selected')
