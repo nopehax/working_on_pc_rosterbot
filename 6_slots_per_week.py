@@ -21,7 +21,7 @@ got_it = False
 
 option = webdriver.ChromeOptions()
 option.binary_location = brave_path
-#option.add_argument("--headless")
+option.add_argument("--headless")
 option.add_argument('--log-level=3')
 option.add_argument('--incognito')
 
