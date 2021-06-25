@@ -12,7 +12,7 @@ brave_path = "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe
 user = 'Hca-98933600'
 password = '0923-Vcs'
 MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-DAYS = ['Mon', 'Tue', 'Thu', 'Fri', 'Sat']
+DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri']
 
 
 next_month = 'Jul'
