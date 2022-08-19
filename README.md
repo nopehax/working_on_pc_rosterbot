@@ -8,3 +8,5 @@ So I ran the bot on the actual day and it didn't work.
 The current code does not take into account loading time. There are so many people accessing the website all at once that the servers were overloaded. Then when the bot is selecting the vc centre, it returns no element found exception cos it hasn't loaded yet, causing the bot to stop.
 The website even gave a 502 error at one point in time
 
+It still does work when the load isn't high, so I was able to get slots when others were dropping them
+
